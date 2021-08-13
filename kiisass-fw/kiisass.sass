@@ -1,11 +1,132 @@
 @import 'modules/reset'
-@import 'modules/_variables'
+@import 'modules/variables'
+@import 'modules/mixins'
 
 /** Layout **/
+
+body
+  min-width: 1200px
 
 .mx-auto
   margin-left: auto
   margin-right: auto
 
-.container 
+.container
+  @include container
+
+.grid-1
+  @include grid($grid: $column-width)
+
+.grid-2
+  @include grid($grid: $column-width * 2 + $colunm-gap)
+
+.grid-3
+  @include grid($grid: $column-width * 3)
+
+.grid-4
+  @include grid($grid: $column-width * 4)
+
+.grid-5
+  @include grid($grid: $column-width * 5)
+
+.grid-6
+  @include grid($grid: $column-width * 6)
+
+.grid-7
+  @include grid($grid: $column-width * 7)
+
+.grid-8
+  @include grid($grid: $column-width * 8)
+
+.grid-9
+  @include grid($grid: $column-width * 9)
+
+.grid-10
+  @include grid($grid: $column-width * 10)
+
+.grid-11
+  @include grid($grid: $column-width * 11)
+
+.grid-12
+  @include grid($grid: $column-width * 12)
+
+.grid-13
+  @include grid($grid: $column-width * 13)
+
+.grid-14
+  @include grid($grid: $column-width * 14)
+
+.grid-15
+  @include grid($grid: $column-width * 15)
+
+.grid-16
+  @include grid
+
+.block 
+  display: block
+
+.flex 
+  display: flex
+
+.hidden
+  display: none
+
+.inset-0
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+/** Flexbox **/
+
+.flex-row
+  flex-direction: row
+
+.flex-col
+  flex-direction: column
+
+.flex-wrap
+  flex-wrap: wrap
+
+.justify-center
+  justify-content: center
+
+.justify-between
+  justify-content: space-between
+
+.justify-around
+  justify-content: space-around
+
+.content-center
+  align-content: center
+
+.content-between
+  align-content: space-between
+
+.content-around
+  align-content: space-around
+
+/** Spacing **/
+
+.m-0
+  margin: 0
+
+.p-0
+  margin: 0
+
+/** Sizing **/
+
+.w-full
   width: 100%
+
+.w-screen 
+  width: 100vw
+
+.h-auto
+  height: auto
+
+.h-full
+  height: 100%
+
+.h-screen 
+  height: 100vh
