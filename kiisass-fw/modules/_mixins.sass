@@ -13,6 +13,15 @@
   margin-left: $cell-margin
   margin-right: $cell-margin
 
+
+/** Typography **/
+
+@mixin text-size($size: .75rem, $weight: 500, $height: 1rem, $spacing: .06rem)
+  font-size: $size
+  font-weight: $weight
+  line-height: $height
+  letter-spacing: $spacing
+
 /** Miscelanea **/
 
 @mixin border-b($border-color: $dark-grey)

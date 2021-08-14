@@ -1,4 +1,7 @@
-.logo {
+/* Topbar */
+
+.logo,
+.logo-sm {
   max-height: 35px; 
   fill: #cc3232;
 }
@@ -9,4 +12,14 @@
 
 .search-icon {
   color: #cc3232;
+}
+
+/* Hero */
+
+.title-hero {
+  color: #343c50;
+}
+
+.logo-sm {
+  max-height: 30px;
 }
