@@ -1,6 +1,6 @@
 /** Reset CSS **/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 *,
 *:before,
 *:after {
@@ -248,6 +248,13 @@ input {
 /** Colors **/
 /** Grid **/
 /** Grid **/
+/** Miscelanea **/
+/** Global **/
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
 /** Layout **/
 body {
   min-width: 1200px;
@@ -416,6 +423,18 @@ body {
       flex-wrap: wrap;
 }
 
+.flex-0 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
 .justify-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -448,6 +467,12 @@ body {
       align-content: space-around;
 }
 
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /** Spacing **/
 .mx-auto {
   margin-left: auto;
@@ -466,6 +491,11 @@ body {
   padding: 0;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 /** Sizing **/
 .w-full {
   width: 100%;
@@ -473,6 +503,10 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-75 {
+  width: 75%;
 }
 
 .h-auto {
@@ -489,6 +523,10 @@ body {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-16 {
+  height: 4rem;
   /** Background **/
 }
 
@@ -514,5 +552,39 @@ body {
 
 .bg-secondary-color {
   background-color: #cc3232;
+}
+
+/** Typography **/
+.font-primary {
+  font-family: freight-text-pro, serif;
+}
+
+.font-secondary {
+  font-family: Montserrat, sans-serif;
+}
+
+.text-xs {
+  font-size: .75rem;
+  line-height: 1rem;
+  letter-spacing: .06rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: .06rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-none {
+  list-style: none;
+}
+
+/** Miscelanea **/
+.border-b {
+  border-bottom: 1px solid #ccc;
 }
 /*# sourceMappingURL=kiisass.css.map */
