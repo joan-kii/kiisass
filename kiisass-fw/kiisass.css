@@ -1,5 +1,6 @@
 /** Reset CSS **/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 *,
 *:before,
 *:after {
@@ -179,13 +180,339 @@ input {
 
 /** Colors **/
 /** Grid **/
+/** Fonts **/
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/ac6334/000000000000000000012059/27/l?subset_id=1&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/ac6334/000000000000000000012059/27/d?subset_id=1&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/ac6334/000000000000000000012059/27/a?subset_id=1&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/5464d5/00000000000000000001205a/27/l?subset_id=1&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/5464d5/00000000000000000001205a/27/d?subset_id=1&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/5464d5/00000000000000000001205a/27/a?subset_id=1&fvd=i4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/6469f1/000000000000000000012108/27/l?subset_id=1&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/6469f1/000000000000000000012108/27/d?subset_id=1&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/6469f1/000000000000000000012108/27/a?subset_id=1&fvd=n5&v=3) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/ee7e95/000000000000000000012109/27/l?subset_id=1&fvd=i5&v=3) format("woff2"), url(https://use.typekit.net/af/ee7e95/000000000000000000012109/27/d?subset_id=1&fvd=i5&v=3) format("woff"), url(https://use.typekit.net/af/ee7e95/000000000000000000012109/27/a?subset_id=1&fvd=i5&v=3) format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/294d74/00000000000000000001210a/27/l?subset_id=1&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/294d74/00000000000000000001210a/27/d?subset_id=1&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/294d74/00000000000000000001210a/27/a?subset_id=1&fvd=n6&v=3) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/75d1db/00000000000000000001210b/27/l?subset_id=1&fvd=i6&v=3) format("woff2"), url(https://use.typekit.net/af/75d1db/00000000000000000001210b/27/d?subset_id=1&fvd=i6&v=3) format("woff"), url(https://use.typekit.net/af/75d1db/00000000000000000001210b/27/a?subset_id=1&fvd=i6&v=3) format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/04ec74/00000000000000000001205b/27/l?subset_id=1&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/04ec74/00000000000000000001205b/27/d?subset_id=1&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/04ec74/00000000000000000001205b/27/a?subset_id=1&fvd=n7&v=3) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  src: url(https://use.typekit.net/af/8cf83d/00000000000000000001205c/27/l?subset_id=1&fvd=i7&v=3) format("woff2"), url(https://use.typekit.net/af/8cf83d/00000000000000000001205c/27/d?subset_id=1&fvd=i7&v=3) format("woff"), url(https://use.typekit.net/af/8cf83d/00000000000000000001205c/27/a?subset_id=1&fvd=i7&v=3) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+
+/** Colors **/
+/** Grid **/
+/** Grid **/
 /** Layout **/
+body {
+  min-width: 1200px;
+}
+
+.fluid-container {
+  max-width: 100vw;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-1 {
+  display: inline-block;
+  width: 55px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-2 {
+  display: inline-block;
+  width: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-3 {
+  display: inline-block;
+  width: 205px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-4 {
+  display: inline-block;
+  width: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-5 {
+  display: inline-block;
+  width: 355px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-6 {
+  display: inline-block;
+  width: 430px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-7 {
+  display: inline-block;
+  width: 505px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-8 {
+  display: inline-block;
+  width: 580px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-9 {
+  display: inline-block;
+  width: 655px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-10 {
+  display: inline-block;
+  width: 730px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-11 {
+  display: inline-block;
+  width: 805px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-12 {
+  display: inline-block;
+  width: 880px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-13 {
+  display: inline-block;
+  width: 955px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-14 {
+  display: inline-block;
+  width: 1030px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-15 {
+  display: inline-block;
+  width: 1105px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-16 {
+  display: inline-block;
+  width: 1180px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/** Flexbox **/
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.content-between {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.content-around {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+/** Spacing **/
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.container {
+.m-0 {
+  margin: 0;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+/** Sizing **/
+.w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-8 {
+  height: 2rem;
+  /** Background **/
+}
+
+.bg-black {
+  background-color: #343c50;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-grey {
+  background-color: #eee;
+}
+
+.bg-dark-grey {
+  background-color: #ccc;
+}
+
+.bg-primary-color {
+  background-color: #d41929;
+}
+
+.bg-secondary-color {
+  background-color: #cc3232;
 }
 /*# sourceMappingURL=kiisass.css.map */
