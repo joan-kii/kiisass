@@ -13,7 +13,6 @@
   margin-left: $cell-margin
   margin-right: $cell-margin
 
-
 /** Typography **/
 
 @mixin text-size($size: .75rem, $weight: 500, $height: 1rem, $spacing: .06rem)
@@ -23,6 +22,9 @@
   letter-spacing: $spacing
 
 /** Miscelanea **/
+
+@mixin border($border-color: $dark-grey)
+  border: 1px solid $border-color
 
 @mixin border-b($border-color: $dark-grey)
   border-bottom: 1px solid $border-color

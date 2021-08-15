@@ -1,3 +1,10 @@
+/* Global */
+
+.link {
+  color: #d41929;
+  text-decoration: underline;
+}
+
 /* Topbar */
 
 .logo,

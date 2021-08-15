@@ -4,7 +4,8 @@
 
 /** Global **/
 
-a 
+a,
+p
   text-decoration: none
   color: #262626
 
@@ -76,11 +77,23 @@ body
 .hidden
   display: none
 
-.inset-0
-  top: 0
-  right: 0
-  bottom: 0
+/** Position **/
+
+.relative 
+  position: relative
+
+.fixed
+  position: fixed
+
+.inset-x-0
   left: 0
+  right: 0
+
+.top-32
+  top: 8rem
+
+.z-10
+  z-index: 10
 
 /** Flexbox **/
 
@@ -129,6 +142,10 @@ body
 .m-0
   margin: 0
 
+.my-8
+  margin-top: 2rem
+  margin-bottom: 2rem
+
 .mb-4
   margin-bottom: 1rem
 
@@ -138,12 +155,29 @@ body
 .mb-8
   margin-bottom: 2rem
 
+.mb-16
+  margin-bottom: 4rem
+
 .p-0
   padding: 0
+
+.p-3
+  padding: .75rem
+
+.p-4
+  padding: 1rem
 
 .px-10
   padding-left: 2.5rem
   padding-right: 2.5rem
+
+.py-3
+  padding-top: .75rem
+  padding-bottom: .75rem
+
+.py-16
+  padding-top: 3.5rem
+  padding-bottom: 3.5rem
 
 /** Sizing **/
 
@@ -199,11 +233,17 @@ body
 .font-secondary
   font-family: $secondary-font
 
+.text-white
+  color: #fff
+
 .text-xs
   @include text-size
 
 .text-sm
-  @include text-size($size: .875rem, $height: 1.25rem)
+  @include text-size($size: .875rem, $height: 1.25rem, $spacing: .02rem)
+
+.text-base
+  @include text-size($size: 1.15rem, $height: 1.7rem, $weight: 400, $spacing: .02rem)
 
 .text-xl
   @include text-size($size: 2.5rem, $weight: 700, $height: 1.25rem)
@@ -216,5 +256,17 @@ body
 
 /** Miscelanea **/
 
+.border-none
+  border: none
+
+.border
+  @include border
+
 .border-b
   @include border-b
+
+.rounded
+  border-radius: .25rem
+
+.outline-none 
+  outline: 2px solid transparent
