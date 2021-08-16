@@ -142,9 +142,21 @@ body
 .m-0
   margin: 0
 
+.my-2
+  margin-top: .5rem
+  margin-bottom: .5rem
+
+.my-4
+  margin-top: 1rem
+  margin-bottom: 1rem
+
 .my-8
   margin-top: 2rem
   margin-bottom: 2rem
+
+.my-16
+  margin-top: 4rem
+  margin-bottom: 4rem
 
 .mb-4
   margin-bottom: 1rem
@@ -167,9 +179,24 @@ body
 .p-4
   padding: 1rem
 
+.p-6
+  padding: 1.5rem
+
+.px-2
+  padding-left: .5rem
+  padding-right: .5rem
+
+.px-5
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+
 .px-10
   padding-left: 2.5rem
   padding-right: 2.5rem
+
+.py-1
+  padding-top: .25rem
+  padding-bottom: .25rem
 
 .py-3
   padding-top: .75rem
@@ -183,6 +210,9 @@ body
 
 .w-full
   width: 100%
+
+.m-w-full
+  max-width: 100%
 
 .w-screen 
   width: 100vw
@@ -236,6 +266,12 @@ body
 .text-white
   color: #fff
 
+.text-grey
+  color: #aaa9a9
+
+.text-secondary
+  color: $secondary-color
+
 .text-xs
   @include text-size
 
@@ -244,6 +280,12 @@ body
 
 .text-base
   @include text-size($size: 1.15rem, $height: 1.7rem, $weight: 400, $spacing: .02rem)
+
+.text-lg
+  @include text-size($size: 1.2rem, $height: 1.9rem, $weight: 600, $spacing: .03rem)
+
+.text-title
+  @include text-size($size: 1.6rem, $height: 1.7rem, $weight: 600, $spacing: .03rem)
 
 .text-xl
   @include text-size($size: 2.5rem, $weight: 700, $height: 1.25rem)
@@ -261,6 +303,12 @@ body
 
 .border
   @include border
+
+.border-t
+  @include border-t($width: 1px, $border-color: $grey)
+
+.border-t-secondary
+  @include border-t($width: 3px, $border-color: $primary-color)
 
 .border-b
   @include border-b

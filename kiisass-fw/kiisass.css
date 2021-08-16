@@ -500,9 +500,24 @@ body {
   margin: 0;
 }
 
+.my-2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mb-4 {
@@ -533,9 +548,28 @@ body {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.px-5 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 
 .py-3 {
@@ -551,6 +585,10 @@ body {
 /** Sizing **/
 .w-full {
   width: 100%;
+}
+
+.m-w-full {
+  max-width: 100%;
 }
 
 .w-screen {
@@ -619,6 +657,14 @@ body {
   color: #fff;
 }
 
+.text-grey {
+  color: #aaa9a9;
+}
+
+.text-secondary {
+  color: #cc3232;
+}
+
 .text-xs {
   font-size: 0.75rem;
   font-weight: 500;
@@ -638,6 +684,20 @@ body {
   font-weight: 400;
   line-height: 1.7rem;
   letter-spacing: 0.02rem;
+}
+
+.text-lg {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0.03rem;
+}
+
+.text-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  letter-spacing: 0.03rem;
 }
 
 .text-xl {
@@ -662,6 +722,14 @@ body {
 
 .border {
   border: 1px solid #ccc;
+}
+
+.border-t {
+  border-top: 1px solid #eee;
+}
+
+.border-t-secondary {
+  border-top: 3px solid #d41929;
 }
 
 .border-b {
