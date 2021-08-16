@@ -17,7 +17,8 @@
   line-height: 64px;
 }
 
-.search-icon {
+.search-icon,
+.connect-icon {
   color: #cc3232;
 }
 
@@ -29,4 +30,20 @@
 
 .logo-sm {
   max-height: 30px;
+}
+
+/* Social Proof */ 
+
+.readline {
+  margin-bottom: 1rem;
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-top: 2px solid #cc3232;
+}
+
+/* Footer */
+
+.connect-icon {
+  padding: 1rem;
 }

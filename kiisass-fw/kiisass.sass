@@ -9,6 +9,12 @@ p
   text-decoration: none
   color: #262626
 
+i
+  font-style: italic
+
+b
+  font-weight: bold
+
 /** Layout **/
 
 body
@@ -133,6 +139,12 @@ body
 .items-center
   align-items: center
 
+.items-end
+  align-items: flex-end
+
+.self-center
+  align-self: center
+
 /** Spacing **/
 
 .mx-auto
@@ -157,6 +169,12 @@ body
 .my-16
   margin-top: 4rem
   margin-bottom: 4rem
+
+.mb-1
+  margin-bottom: .25rem
+
+.mb-2
+  margin-bottom: .5rem
 
 .mb-4
   margin-bottom: 1rem
@@ -202,9 +220,13 @@ body
   padding-top: .75rem
   padding-bottom: .75rem
 
+.py-8
+  padding-top: 2rem
+  padding-bottom: 2rem
+
 .py-16
-  padding-top: 3.5rem
-  padding-bottom: 3.5rem
+  padding-top: 4rem
+  padding-bottom: 4rem
 
 /** Sizing **/
 
@@ -276,10 +298,13 @@ body
   @include text-size
 
 .text-sm
-  @include text-size($size: .875rem, $height: 1.25rem, $spacing: .02rem)
+  @include text-size($size: .9rem, $height: 1.25rem, $spacing: .02rem)
 
 .text-base
   @include text-size($size: 1.15rem, $height: 1.7rem, $weight: 400, $spacing: .02rem)
+
+.text-cite
+  @include text-size($size: 1.5rem, $height: 1.7rem, $weight: 400, $spacing: .02rem)
 
 .text-lg
   @include text-size($size: 1.2rem, $height: 1.9rem, $weight: 600, $spacing: .03rem)
@@ -292,6 +317,9 @@ body
 
 .text-center
   text-align: center
+
+.text-right
+  text-align: right
 
 .list-none
   list-style: none
@@ -318,3 +346,6 @@ body
 
 .outline-none 
   outline: 2px solid transparent
+
+.disc-style
+  list-style: disc inside

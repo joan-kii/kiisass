@@ -257,6 +257,14 @@ p {
   color: #262626;
 }
 
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: bold;
+}
+
 /** Layout **/
 body {
   min-width: 1200px;
@@ -490,6 +498,18 @@ body {
           align-items: center;
 }
 
+.items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 /** Spacing **/
 .mx-auto {
   margin-left: auto;
@@ -518,6 +538,14 @@ body {
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: .25rem;
+}
+
+.mb-2 {
+  margin-bottom: .5rem;
 }
 
 .mb-4 {
@@ -577,9 +605,14 @@ body {
   padding-bottom: .75rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-16 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /** Sizing **/
@@ -673,7 +706,7 @@ body {
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: 0.02rem;
@@ -681,6 +714,13 @@ body {
 
 .text-base {
   font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.02rem;
+}
+
+.text-cite {
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.7rem;
   letter-spacing: 0.02rem;
@@ -709,6 +749,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .list-none {
@@ -742,5 +786,9 @@ body {
 
 .outline-none {
   outline: 2px solid transparent;
+}
+
+.disc-style {
+  list-style: disc inside;
 }
 /*# sourceMappingURL=kiisass.css.map */
