@@ -20,78 +20,8 @@ b
 .fluid-container
   width: 100%
 
-.container
-  @include container
-
-.grid-1
-  grid-column: span 1
-  grid-row: span 1
-
-.grid-2
-  grid-column: span 2
-  grid-row: span 1
-
-.grid-3
-  grid-column: span 3
-  grid-row: span 1
-
-.grid-4
-  grid-column: span 4
-  grid-row: span 1
-
-.grid-5
-  grid-column: span 5
-  grid-row: span 1
-
-.grid-6
-  grid-column: span 6
-  grid-row: span 1
-
-.grid-7
-  grid-column: span 7
-  grid-row: span 1
-
-.grid-8
-  grid-column: span 8
-  grid-row: span 1
-
-.grid-9
-  grid-column: span 9
-  grid-row: span 1
-
-.grid-10
-  grid-column: span 10
-  grid-row: span 1
-
-.grid-11
-  grid-column: span 11
-  grid-row: span 1
-
-.grid-12
-  grid-column: span 12
-  grid-row: span 1
-
-.grid-13
-  grid-column: span 13
-  grid-row: span 1
-
-.grid-14
-  grid-column: span 14
-  grid-row: span 1
-
-.grid-15
-  grid-column: span 15
-  grid-row: span 1
-
-.grid-16
-  grid-column: span 16
-  grid-row: span 1
-
 .block 
   display: block
-
-.hidden
-  display: none
 
 .flex 
   display: flex
@@ -99,7 +29,26 @@ b
 .hidden
   display: none
 
+@media (max-width: 719px)
+  body
+    min-width: 720px
+    
+  .container
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+
+  @for $i from 1 through 12
+    .grid-#{$i}
+      display: inline;
+      margin-left: 10px
+      margin-right: 10px
+      width: #{$i * 40}px
+
 /** Position **/
+
+.absolute
+  position: absolute
 
 .relative 
   position: relative
@@ -160,6 +109,9 @@ b
 
 .self-center
   align-self: center
+
+.justify-self-center
+  justify-self: center
 
 /** Spacing **/
 
