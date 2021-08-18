@@ -3,15 +3,13 @@
 /** Grid **/
 
 @mixin container($grid: $max-width)
-  width: $grid
   margin-left: auto
   margin-right: auto
-
-@mixin grid($grid: $max-width - $column-gap)
-  display: inline-block
   width: $grid
-  margin-left: $cell-margin
-  margin-right: $cell-margin
+  display: grid
+  grid-template-columns: repeat(16, 1fr)
+  grid-auto-rows: auto
+  gap: $gap
 
 /** Typography **/
 

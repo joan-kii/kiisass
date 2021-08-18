@@ -17,9 +17,6 @@ b
 
 /** Layout **/
 
-body
-  min-width: 1200px
-
 .fluid-container
   width: 100%
 
@@ -27,52 +24,68 @@ body
   @include container
 
 .grid-1
-  @include grid($grid: $column-width)
+  grid-column: span 1
+  grid-row: span 1
 
 .grid-2
-  @include grid($grid: ($column-width * 2) + ($column-gap * 1))
+  grid-column: span 2
+  grid-row: span 1
 
 .grid-3
-  @include grid($grid: ($column-width * 3) + ($column-gap * 2))
+  grid-column: span 3
+  grid-row: span 1
 
 .grid-4
-  @include grid($grid: ($column-width * 4) + ($column-gap * 3))
+  grid-column: span 4
+  grid-row: span 1
 
 .grid-5
-  @include grid($grid: ($column-width * 5) + ($column-gap * 4))
+  grid-column: span 5
+  grid-row: span 1
 
 .grid-6
-  @include grid($grid: ($column-width * 6) + ($column-gap * 5))
+  grid-column: span 6
+  grid-row: span 1
 
 .grid-7
-  @include grid($grid: ($column-width * 7) + ($column-gap * 6))
+  grid-column: span 7
+  grid-row: span 1
 
 .grid-8
-  @include grid($grid: ($column-width * 8) + ($column-gap * 7))
+  grid-column: span 8
+  grid-row: span 1
 
 .grid-9
-  @include grid($grid: ($column-width * 9) + ($column-gap * 8))
+  grid-column: span 9
+  grid-row: span 1
 
 .grid-10
-  @include grid($grid: ($column-width * 10) + ($column-gap * 9))
+  grid-column: span 10
+  grid-row: span 1
 
 .grid-11
-  @include grid($grid: ($column-width * 11) + ($column-gap * 10))
+  grid-column: span 11
+  grid-row: span 1
 
 .grid-12
-  @include grid($grid: ($column-width * 12) + ($column-gap * 11))
+  grid-column: span 12
+  grid-row: span 1
 
 .grid-13
-  @include grid($grid: ($column-width * 13) + ($column-gap * 12))
+  grid-column: span 13
+  grid-row: span 1
 
 .grid-14
-  @include grid($grid: ($column-width * 14) + ($column-gap * 13))
+  grid-column: span 14
+  grid-row: span 1
 
 .grid-15
-  @include grid($grid: ($column-width * 15) + ($column-gap * 14))
+  grid-column: span 15
+  grid-row: span 1
 
 .grid-16
-  @include grid
+  grid-column: span 16
+  grid-row: span 1
 
 .block 
   display: block
