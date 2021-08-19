@@ -29,21 +29,85 @@ b
 .hidden
   display: none
 
-@media (max-width: 719px)
+.container
+  margin-left: auto
+  margin-right: auto
+
+@for $i from 1 through 12
+  .grid-#{$i}
+    margin-left: 10px
+    margin-right: 10px
+
+/** xs Breakpoint **/
+
+@media (min-width: 0)
   body
-    min-width: 720px
+    min-width: 290px
     
   .container
-    margin-left: auto;
-    margin-right: auto;
-    width: 720px;
+    width: 290px
 
   @for $i from 1 through 12
     .grid-#{$i}
-      display: inline;
-      margin-left: 10px
-      margin-right: 10px
+      width: #{$i * 20}px
+  
+/** sm Breakpoint **/
+
+@media (min-width: 575px)
+  body
+    min-width: 576px
+    
+  .container
+    width: 576px
+
+  @for $i from 1 through 12
+    .grid-#{$i}
       width: #{$i * 40}px
+
+/** md Breakpoint **/
+
+@media (min-width: 767px)
+  body
+    min-width: 768px
+    
+  .container
+    width: 768px
+
+  @for $i from 1 through 12
+    .grid-#{$i}
+      width: #{$i * 60}px
+
+/** lg Breakpoint **/
+
+@media (min-width: 991px)
+  body
+    min-width: 992px
+    
+  .container
+    width: 992px
+
+  @for $i from 1 through 12
+    .grid-#{$i}
+      width: #{$i * 80}px
+
+/** xl Breakpoint **/
+
+@media (min-width: 1199px)
+  body
+    min-width: 1200px
+    
+  .container
+    width: 1200px
+
+  @for $i from 1 through 12
+    .grid-#{$i}
+      width: #{$i * 100}px
+
+.grid-full
+  @extend .grid-12
+
+.grid-75
+  @extend .grid-10
 
 /** Position **/
 
@@ -109,9 +173,6 @@ b
 
 .self-center
   align-self: center
-
-.justify-self-center
-  justify-self: center
 
 /** Spacing **/
 
