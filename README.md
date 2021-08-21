@@ -1,4 +1,4 @@
-## kiisass a simple layout grid framework)
+## kiisass a simple layout grid framework
 
 **12 column grid**
 
@@ -12,24 +12,22 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
 ### display properties
 
 - **[hidden | block | flex ]**: to specify display property.
+- **fluid-container**: to specify display to full width.
+- **container**: to specify display to responsive width.
 
-### grid properties (continuar aquí)
+### grid properties 
 
 - grid columns
-  - **col-1** to **col-12** : to specify your column width. (how many column to span).
-  - **col-[sm | md | lg | xl]-\***: specify the column width. based on the devise width \*(from 1 to 12).
-  * column-order
-    - **order-0 | .order-1 to .order-12**: will reorder your column based on the chosen index.
-    - **order-[sm | md | lg | xl]-\***: specify the order based on the device width \*(from 1 to 12).
-  * offset-column
-    - **offset-0 | .offset-1 to .offset-12**: offset a column by (the index) number of column.
-    - **offset-[sm | md | lg | xl]-\***: offset the column based on the device width \*(from 1 to 12).
+  - **grid-1** to **grid-12** : to specify your column width. (how many column to span).
+  - **[xs-w-full | sm-w-full | md-w-full | lg-w-full | xl-w-full]**: to specify display to grid responsive.
+  - **[xs | sm | md | lg | xl]-grid-[1 - 12]\***: specify the column width. based on the device width.
 
 ### flex box properties
 
 - flex-direction
   - **flex-[row | col ]**: change flex-direction property.
   - **[xs | sm | md | lg | xl]-[row | col ]**: change flex-direction property based on the device width.
+  - **[xs | sm | md | lg | xl]-flex-[row | col ]**: toggle flex-direction property based on the device width.
 - flex-wrap
   - **flex-[nowrap | wrap ]**: change flex-wrap property.
 - justify-content
@@ -39,6 +37,10 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
   - **self-[start | end | center | auto]**: change align-self property based.
 - align-content
   - **content-[start | end | center | between | around]**: change align-content property.
+
+### positioning
+
+- **[top | left | bottom | right]-[1 - 32]**: change position property in 0.5rem steps.
 
 ### padding and margin utilities
 
@@ -50,8 +52,8 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
 
 - margin
 
-  - **m[x | y]-\***: change the margin property on the desired axis.
-  - **m[t | r | b | l]-\***: change the margin property on the desired side.
+  - **m[x | y]-[1 - 16]\***: change the margin property on the desired axis.
+  - **m[t | r | b | l]-[1 - 16]\***: change the margin property on the desired side.
 
 ### text utilities
 
@@ -79,3 +81,6 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
 
 > - [Cloning Farnam Street](https://joan-kii.github.io/kiisass/)
 
+## Original Site
+
+> - [Farnam Street](https://fs.blog/)
