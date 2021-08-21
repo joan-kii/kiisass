@@ -20,7 +20,7 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
 - grid columns
   - **grid-1** to **grid-12** : to specify your column width. (how many column to span).
   - **[xs-w-full | sm-w-full | md-w-full | lg-w-full | xl-w-full]**: to specify display to grid responsive.
-  - **[xs | sm | md | lg | xl]-grid-[1 - 12]\***: specify the column width. based on the device width.
+  - **[xs | sm | md | lg | xl]-grid-[1 - 12]**: specify the column width. based on the device width.
 
 ### flex box properties
 
@@ -47,13 +47,13 @@ a basic **12 column grid** framework based on [960 Grid System](https://960.gs/)
 - padding
 
   - **p-1** to **p-16**: change the padding property.
-  - **p[x | y]-\***: change the padding property on the desired axis.
-  - **p[t | r | b | l]-\***: change the padding property on the desired side.
+  - **p[x | y]-[1 - 16]**: change the padding property on the desired axis.
+  - **p[t | r | b | l]-[1 - 16]**: change the padding property on the desired side.
 
 - margin
 
-  - **m[x | y]-[1 - 16]\***: change the margin property on the desired axis.
-  - **m[t | r | b | l]-[1 - 16]\***: change the margin property on the desired side.
+  - **m[x | y]-[1 - 16]**: change the margin property on the desired axis.
+  - **m[t | r | b | l]-[1 - 16]**: change the margin property on the desired side.
 
 ### text utilities
 
